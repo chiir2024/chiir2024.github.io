@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ACM CHIIR 2024</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/main.css" />
+		
+		
+		<script>
+			var countDownDate = new Date("Mar 10, 2024 09:00:00").getTime();
+
+			// Update the count down every 1 second
+			var x = setInterval(function() {
+
+			  // Get today's date and time
+			  var now = new Date().getTime();
+
+			  // Find the distance between now and the count down date
+			  var distance = countDownDate - now;
+
+			  // Time calculations for days, hours, minutes and seconds
+			  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+			  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+			  // Display the result in the element with id="demo"
+			  document.getElementById("countdownTimer").innerHTML = "CHIIR 2024 will begin in: " + days + "d " + hours + "h "
+			  + minutes + "m " + seconds + "s ";
+
+			  // If the count down is finished, write some text
+			  if (distance < 0) {
+				clearInterval(x);
+				document.getElementById("countdownTimer").innerHTML = "EXPIRED";
+			  }
+			}, 1000);
+	</script>
+
+    </head>
+    <body>
+	
+	<div class="main-frame">
+	
+		<div class="topnav">
+		<img src="images/logo_header.png" alt="ACM CHIIR 2024 Logo"/>
+			<div class="topnav-right">
+				<a href="index.html">Welcome</a>
+				<a href="cfp.html">Call for Papers</a>
+				<a href="organisers.html">Organisers</a>
+			</div>
+		</div>
+		
+		<div class="highlighted_header">Sheffield, UK</div>
+		
+		<h1>ACM SIGIR Conference on Human Information Interaction And Retrieval</h1>
+		
+		<p>The 2024 ACM SIGIR Conference on Human Information Interaction and Retrieval (CHIIR – pronounced “cheer”) will take place in <strong>Sheffield, UK</strong> between the <strong>10th and 14th of March, 2024</strong>.  ACM SIGIR CHIIR 2024 invites submissions focused on user-centered approaches to the design and evaluation of systems for information access, seeking, retrieval, and use. Contributions may explore improvements to existing systems and interfaces; propose novel theories, models, and systems; or focus on understanding individual and group interactions with information and information systems.</p>
+
+<p>CHIIR is a multi-disciplinary research meeting. In addition to studies of interactive systems, information interaction, and retrieval, we encourage submissions on related topics such as human-human information interaction, novel interaction paradigms, new evaluation methods, and related research in a range of communities such as sociology, education, ethnography, psychology, human-computer interaction, and other relevant disciplines.</p>
+
+<p id="countdownTimer"></p>
+
+		<h2>Important Dates</h2>
+		<ul>
+			<li>10th October, 2023: Full and Perspective Papers abstracts due</li>
+			<li>17th October, 2023: Full Papers, Perspective Papers, Tutorials, Workshops submissions due</li>
+			<li>31st October, 2023: Short Papers, Demos/Resources, and Doctoral Consortium paper submissions due</li>
+			<li>12th December, 2023: Notifications</li>
+			<li>10th - 14th of March, 2024: Conference </li>
+		</ul>
+		
+		<br />
+		<br />
+		
+		<div class="logo_block">
+		<a href="http://sheffield.ac.uk/" target="_blank"><img src="images/TUOS_logo.png" alt="The University of Sheffeld logo."/></a> 
+		<a href="https://sigir.org/"><img src="images/SIGIR_logo.jpg" alt="SIGIR logo."/></a>
+		</div>
+		
+	</div>
+    </body>
+</html>
