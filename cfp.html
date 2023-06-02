@@ -5,39 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/main.css" />
-		
-		
-		<script>
-			var countDownDate = new Date("Mar 10, 2024 09:00:00").getTime();
-
-			// Update the count down every 1 second
-			var x = setInterval(function() {
-
-			  // Get today's date and time
-			  var now = new Date().getTime();
-
-			  // Find the distance between now and the count down date
-			  var distance = countDownDate - now;
-
-			  // Time calculations for days, hours, minutes and seconds
-			  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-			  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-			  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-			  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-			  // Display the result in the element with id="demo"
-			  document.getElementById("countdownTimer").innerHTML = "CHIIR 2024 will begin in: " + days + "d " + hours + "h "
-			  + minutes + "m " + seconds + "s ";
-
-			  // If the count down is finished, write some text
-			  if (distance < 0) {
-				clearInterval(x);
-				document.getElementById("countdownTimer").innerHTML = "EXPIRED";
-			  }
-			}, 1000);
-	</script>
-
-    </head>
+	</head>
     <body>
 	
 	<div class="main-frame">
@@ -51,18 +19,243 @@
 			</div>
 		</div>
 		
-		<div class="highlighted_header">Call for Papers</div>
+		<div class="highlighted_header">ACM CHIIR 2023 Call for Submissions</div>
 		
-		<h1>Coming soon...</h1>
+		<p>The 2024 ACM SIGIR Conference on Human Information Interaction and Retrieval (CHIIR – pronounced “cheer”) will take place in Sheffield, UK between the 10th and 14th of March, 2024. ACM SIGIR CHIIR 2024 invites submissions focused on user-centred approaches to the design and evaluation of systems for information access, seeking, retrieval, and use. Contributions may explore improvements to existing systems and interfaces; propose novel theories, models, and systems; or focus on understanding individual and group interactions with information and information systems.</p>
+
+<p>CHIIR is a multi-disciplinary research meeting. In addition to studies of interactive systems, information interaction, and retrieval, we encourage submissions on related topics such as human-human information interaction, novel interaction paradigms, new evaluation methods, and related research in a range of communities such as sociology, education, ethnography, psychology, human-computer interaction, and other relevant disciplines.</p>
+
+<p>CHIIR 2024 will offer a remote participation option, in which virtual delegates will be able to attend all main conference plenary sessions via video.</p>
+
+		<h1>Overview</h1>
+<p>ACM CHIIR 2024 invites submissions focused on user-centred approaches to the design and evaluation of systems for information access, seeking, retrieval, and use. Contributions may explore improvements to existing systems and interfaces; propose novel theories, models, and systems; or focus on understanding individual and group interactions with information and information systems.</p>
+
+<p>We welcome submissions on a wide range of quantitative and qualitative research methods. ACM CHIIR operates under the <a href="https://www.acm.org/about-acm/policy-against-harassment" target="_blank">ACM Conference Code of Conduct</a>.</p>
+
+<p>Topics covered include but are not limited to:
+	<ul>
+		<li>Information seeking, including task-based and exploratory studies</li>
+		<li>Search interfaces, including those for specialised tasks, populations, and domains</li>
+		<li>Information access methods and systems for users of all abilities</li>
+		<li>Information interactions beyond search</li>
+		<li>User-centred design approaches to humans interacting with information and systems</li>
+		<li>Interaction techniques for information retrieval and discovery</li>
+		<li>Online information seeking, including log analysis of search and browsing</li>
+		<li>Modelling and simulation of information interaction</li>
+		<li>Quantitative and qualitative studies of human information interaction</li>
+		<li>Information seeking and use behaviours, including measures of use and broader sensemaking</li>
+		<li>Field and case studies of information searching, design, and access</li>
+		<li>User-centred evaluation methods and measures, including measures of user experience and performance, experiment and search task design, eye-tracking and neuro-physiological approaches, data analysis methods, and usability</li>
+		<li>Human interaction and experience with conversational information systems and other types of stateful and multi-turn interactions between users and search applications</li>
+		<li>Context-aware and personalised search, including design, contextual features and analysis of information interaction</li>
+		<li>Information visualisation and visual analytics, including search result presentation</li>
+		<li>Enabling and studying multi-modal interactions with information</li>
+		<li>Collaborative information seeking and social search, including social utility and network analysis for information interaction</li>
+		<li>Insights and analyses related to human experiences and usage trends with recommendation technologies</li>
+		<li>Information interaction and seeking with mobile devices and services</li>
+		<li>Studies of biases during usage of generative AI for information interaction and retrieval</li>
+		<li>Information interaction and retrieval in the context of Digital Humanities</li>
+	</ul>
+</p>
+
+<h2>Policy towards AI-generated work</h2>
+<p>Today’s generative AI software tools perform different tasks and it is reasonable to expect that their use and use cases will expand and become more robust over time. Whether disclosure in your CHIIR 2024 paper is necessary depends on how you utilise these tools.  The following guidelines should be followed when determining whether and to what extent disclosure must be provided in your Work. Note that these guidelines mirror <a href="https://www.acm.org/publications/policies/frequently-asked-questions" target="_blank">those of the ACM</a>.</p>
+
+<ul>
+	<li>If you are using generative AI software tools such as ChatGPT, Jasper, AI-Writer, Lex, or other similar tools to generate new content such as text, images, tables, code, etc. you must disclose their use in either the acknowledgements section of the Work or elsewhere in the Work prominently. The level of disclosure should be commensurate with the proportion of new text or content generated by these tools.</li>
+	<li>If entire sections of a Work, including tables, graphs, images, and other content were generated by one of these tools, you should disclose which sections and which tools and tool versions you used to generate those sections by preparing an Appendix or a Supplementary Material document that describes the use,including but not limited to the specific tools and versions, the text of the prompts provided as input, and any post-generation editing (such as rephrasing the generated text). Authors should also note that the amount or type of generated text allowable may vary depending on the type of the section or paper affected. For example, using such tools to generate portions of a Related Work section is fundamentally different than generating novel results or interpretations.</li>
+	<li>If the amount of text being generated is small (limited to phrases or sentences), then it would be sufficient to add a footnote to the relevant section of the submission utilising the system(s) and include a general disclaimer in the Acknowledgements section.</li>
+	<li>If you are using generative AI software tools to edit and improve the quality of your existing text in much the same way you would use a typing assistant like Grammarly to improve spelling, grammar, punctuation, clarity, engagement or to use a basic word processing system to correct spelling or grammar, it is not necessary to disclose such usage of these tools in your Work.</li>
+</ul>
+
+<h1>Submission Types</h1>
+<p>CHIIR 2024 will accept submissions of the following types: full papers, perspective papers, short papers, demos and resources, workshops, tutorials, doctoral consortium papers.</p>
+
+<div>
+<button class="accordion">Full Papers </button>
+<div class="panel">
+  <p>High-quality, original research of relevance to CHIIR may be submitted as a full paper (<strong>6-10 pages plus references in two-column ACM format</strong>). Note the flexible word format and that the length of submissions should be appropriate for the type of paper being submitted. For example, a highly quantitative and technical paper may only need to be 6 pages in length, while a qualitative paper that includes verbatim quotes from interviews may be better presented as a 10-page paper. Submissions should include an analysis or evaluation using rigorous techniques such as laboratory studies, field experiments, in situ observational studies, crowdsourcing, simulations of search behaviour, or log analysis. Authors should describe their methods, specific techniques, and search context in sufficient detail to allow for replication and reuse. Each submission will undergo a rigorous peer-review process and will be reviewed by at least 3 reviewers and a meta reviewer. Accepted full papers will be published in the proceedings, and presented as paper presentations at the conference.
+</p>
+<p>Please note <strong>submission of abstracts is mandatory</strong>. Abstract (max 250 words) must summarise the central content and clearly clarify the topic, aim, method and findings, as well as the main conclusion.</p>
+</div>
+
+<button class="accordion">Perspective Papers</button>
+<div class="panel">
+  <p>As a special category of full papers (<strong>6-10 pages plus references in two-column ACM format</strong>), perspectives papers should present novel ideas or insights concerning approaches, key challenges, or theoretical or methodological issues that have the potential to inspire substantive discussion and lead to significant advances in the field. Note the flexible word format and that the length of submissions should be appropriate for the type of paper being submitted. For example, a highly quantitative and technical paper may only need to be 6 pages in length, while a qualitative paper that includes verbatim quotes from interviews may be better presented as a 10-page paper. These papers should not consist primarily of literature reviews or the presentation of stand-alone studies, but may take the form of:
+Reflections upon the body of research, considering how the field, the theories, the models, and the methods have developed;
+Discussion of the implications of research findings on users in the real world;
+Proposals for and discussions of theories or models of information-interaction; or critical, provocative, and creative contributions to stir debate and discussion.
+Accepted perspectives papers will be published in the proceedings and presented at the conference.</p>
+
+<p>Please note <strong>submission of abstracts is mandatory</strong>. Abstract (max 250 words) must summarise the central content and clearly clarify the topic, aim, method and findings, as well as the main conclusion.</p>
+</div>
+
+<button class="accordion">Short Papers</button>
+<div class="panel">
+  <p>Short papers (<strong>3-5 pages plus references in two-column ACM format</strong>) should report on original, significant, high-quality research. A short paper could present a more focused study of smaller scope than a full paper. For example, work in progress, preliminary research analysis, or late-breaking results are suitable for short papers. Accepted short papers will be published in the proceedings, and presented as posters at the conference.</p>
+  <p>Please note submission of abstracts for short papers is <strong>not</strong> mandatory.</p>
+</div>
+
+<button class="accordion">Demo & Resource Papers</button>
+<div class="panel">
+  <p>We welcome two types of submission (both <strong>4 pages plus references in two-column ACM format</strong>).</p>
+
+<p><strong>Demonstration papers</strong> should enable presenters to give participants first-hand experience of novel research prototypes, operational systems, or in-progress concepts in development. They provide the opportunity to exchange ideas gained from implementing IR systems and to obtain feedback from expert users. The submission should both describe and show the proposed solution, addressing questions such as:
+<ul>
+	<li>What problem does the prototype/system/concept seek to address?</li>
+	<li>How does it do so?</li>
+	<li>Who are the target users?</li>
+	<li>How will you demonstrate this work?</li>
+	<li>How does the work compare with those that exist already?</li>
+	<li>Finally, how, where, and when will your technology have a technical or commercial impact?</li>
+</ul>
+
+</p>
+<hr>
+<p>
+<strong>Resource papers</strong> should describe publicly available datasets or open source software that are new or not well-known, allowing researchers to replicate research results and providing a citable paper when using that resource. Resource papers will be evaluated based on the quality of the resource, its novelty compared to other available alternatives, how well it has been described, and its potential for investigating a variety of research questions.
+
+<h3>Submission instructions</h3>
+<ul><li>Authors should submit a short video of the demo in addition to the paper describing the work. The authors are also encouraged (but not required) to include a URL where the demo itself can be accessed.</li>
+<li>For submissions of datasets, authors should provide a public URL for downloading. For submissions of software, the source code, dependencies on external libraries, and installation instructions must be available on a public Web page or in a publicly accessible repository. All datasets and source code must be licensed in such a manner that it can be legally and freely used, at the minimum in academic and research settings.</li>
+</ul>
+
+Appropriate presentation technologies will be provided for all demonstrations and resources. Accepted demonstration/resource papers will be included in the conference proceedings.
+</p>
+</div>
+
+<button class="accordion">Doctoral Consortium</button>
+<div class="panel">
+  <p>The CHIIR Doctoral Consortium provides an opportunity for doctoral students working in the areas of user-centred approaches to the design and evaluation of systems for information access, retrieval, and use to present and discuss their research with experienced researchers and other doctoral students in a seminar format. We welcome submissions representing a broad spectrum of research topics relevant to the CHIIR community, including research on information (seeking and searching) behaviour (IB), human computer interaction (HCI), and information retrieval (IR).
+</p>
+<p>The Doctoral Consortium focuses on advising students regarding their research and careers. In addition, the DC provides students with an opportunity to establish a supportive community, including other doctoral students working in related areas or at a similar stage of their dissertation research.
+</p>
+<p>The Doctoral Consortium is targeted to students roughly halfway through their Ph.D. program. At a minimum, students should have formulated their research problem, suggested methods, and at a maximum, to have submitted some of the early Ph.D. work for publication. The Doctoral Consortium is not appropriate for students who nearly finish their Ph.D. work.
+</p>
+<p><strong>Note: the CHIIR 2024 Doctoral Consortium will be an in-person event only.</strong>
+</p>
+<h3>Submission instructions</h3>
+<p>Students submit a paper detailing their PhD research. The submitted paper, solely authored by the student, will be the basis for detailed discussions at the Doctoral Consortium. To get the most out of the discussion, it should include:
+<ul>
+	<li>Abstract.</li>
+	<li>Motivation for the research.</li>
+	<li>Background and related work.</li>
+	<li>Description of proposed research, including main research questions.</li>
+	<li>Research methodology, and, as appropriate, ongoing and planned experiments.</li>
+	<li>Progress made so far, including known results, with citations if published.</li>
+	<li>Future plans.</li>
+	<li>References.</li>
+</ul>
+</p>
+<p>
+In addition, a one page appendix to the paper (placed after the references) must include the following:
+<ul>
+	<li>A detailed statement by the student explaining why they want to participate in the Doctoral Consortium at this point in their doctoral studies, and how they hope it will contribute to the development of their work and potential future career.</li>
+	<li>A short statement by the student’s advisor/supervisor agreeing that the student would benefit by attending the DC. Advisors should also specifically indicate whether the student has written, or is close to completing, a thesis proposal (or equivalent), and when they expect the student would defend their dissertation if they progress at a typical rate.</li>
+</ul>
+</p>
+<p>If accepted, the appendix will not be included in the published version of the paper.</p>
+
+<p>Length: <strong>Maximum 4 pages in dual-column ACM format including the references</strong>, and excluding the appendix.</p>
+
+<p>Doctoral Consortium papers are not anonymous and should be submitted showing the author’s name and affiliation and follow the conference submission guidelines.</p>
+
+<p>Submissions will be reviewed by the Doctoral Consortium program committee. The review of each proposal will take into account the degree to which the student will benefit from participating in the consortium. Rejected submissions will receive written feedback. While the submissions are not anonymous, confidentiality of submissions will be maintained throughout the review process.
+</p>
+
+</div>
+
+<button class="accordion">Workshops</button>
+<div class="panel">
+  <p>
+  Workshops provide a venue for addressing novel ideas and emerging research focused on  user-centred aspects of information interaction and information retrieval  Generally, workshops  are less formal, more interactive, and potentially more focused than the main conference itself. Generally, workshop themes will be related to topics of the main conference call for contributions, but proposals related to other areas of Human Information Interaction and Interactive Information Retrieval will be considered. The format of each workshop will be determined by its organisers and can be either full-day or half-day. We encourage workshops that foster collaboration, discussion, group problem-solving, and community building initiatives. Workshops that only revolve around the presentation of papers in a “mini conference” format are strongly discouraged.
+</p>
+<p>
+The organisers of accepted workshops will be expected to define the workshop’s focus, solicit and review submissions, invite additional workshop participants, and decide upon the final program content. At least two organisers are expected to attend and run the entire workshop. Please submit your proposal to EasyChair.
+</p>
+<p>
+Workshop proposals are not anonymous. The workshop proposal consist of two parts as follows:
+
+<ul>
+	<li>Extended abstract (1300 words in the  ACM TAPS format) including:
+	<ul>
+		<li>the title of the proposed workshop and format (full or half day)</li>
+		<li>the academic background for the work, including how it relates to CHIIR</li>
+		<li>the expected key outcomes</li>
+		<li>a short bio of each organiser or presenter, including their name, affiliation, email address, and website	</li>
+		<li>Note that extended abstracts for accepted workshops will be published in conference proceedings.</li>
+	</ul>
+	<li>Supplementary document (1300 words in the ACM TAPS format) including:
+	<ul>
+		<li>a proposed outline for the day/half day, including the type of activities you intend to carry out during the event; successful workshop proposals will show a high proportion of interactive elements</li>
+		<li>any materials/resources that would be needed</li>
+		<li>a website URL (doesn’t need to be active until after acceptance)</li>
+		<li>up to 100 word blurb for the CHIIR website in the event of acceptance</li>
+	</ul>
+</ul>
+
+<h3>Workshop Evaluation Criteria</h3>
+Workshop proposals will be reviewed and selected according to these criteria: (1) potential level of interest within the CHIIR community, (2) experience and skill of the presenter(s), and (3) the value of any planned outcomes or outputs to be produced during the workshop.
+
+  </p>
+</div>
+
+<button class="accordion">Tutorials</button>
+<div class="panel">
+  <p>
+  The purpose of  a tutorial is to provide conference attendees, including early-career researchers and researchers crossing-over from related disciplines, with an opportunity to learn about concepts and techniques for research on user-centred aspects of information interaction and information retrieval. Tutorials also serve as a venue to share presenters’ expertise with the global community of user-centred information retrieval researchers and practitioners. Tutorials should focus on a specific topic presented within the context of CHIIR-related research. Example topic areas include but are not limited to:
+  
+	<ul>
+		<li>A quantitative or qualitative analysis method and its use in CHIIR contexts</li>
+		<li>A modelling or simulation technique for retrieval interaction</li>
+		<li>A method for research data collection, anonymisation, or public archiving</li>
+	</ul>
+</p>
+<p>
+Tutorials could be either full-day or half-day, with a length commensurate with the presented materials and the projected interest of the CHIIR community. We actively encourage both researchers and industry practitioners to submit tutorial proposals that target different levels of expertise and different interests. We also encourage the submission of hands-on tutorials that combine theoretical concepts with practical exercises. Please submit your proposal to EasyChair.
+</p>
+<p>
+Tutorial proposals are not anonymous. The tutorial proposal should consist of two parts as follows:
+
+<ul>
+	<li>Extended abstract (1300 words in the  ACM TAPS format) including:
+	<ul>
+		<li>the title of the proposed tutorial and format (full or half day)</li>
+		<li>motivation for the tutorial: why it is valuable to the CHIIR community</li>
+		<li>syllabus and learning outcomes</li>
+		<li>a short bio of each presenter, including their name, affiliation, email address, and website, and their experience or qualifications in the topic of this tutorial</li>
+		<li>Note that extended abstracts for accepted tutorials will be published in conference proceedings.</li>
+	</ul>
+	<li>Supplementary document (1300 words in the ACM TAPS format) including:
+	<ul>
+		<li>a proposed outline for the day/half day that includes the type of activities you intend to carry out during the event</li>
+		<li>any special requirements for the tutorial room</li>
+		<li>any materials that would be needed</li>
+		<li>a website URL, if desired (doesn’t need to be active until after acceptance)</li>
+		<li>up to 100 word blurb for the CHIIR website in the event of acceptance</li>
+	</ul>
+</ul>
+
+<h3>Tutorial Evaluation Criteria</h3>
+Tutorial proposals will be reviewed and selected according to these criteria: (1) ability for the tutorial to contribute to strengthening the foundations of research on user-centred aspects of information interaction and information retrieval, or to broadening the field with respect to important new challenges and techniques, (2) experience and skill of the presenter(s), and (3) the value of any materials released with the tutorial for the community.
+</p>
+</div>
+</div>
 		
-		<h2>Important Dates</h2>
-		<ul>
-			<li>10th October, 2023: Full and Perspective Papers abstracts due</li>
-			<li>17th October, 2023: Full Papers, Perspective Papers, Tutorials, Workshops submissions due</li>
-			<li>31st October, 2023: Short Papers, Demos/Resources, and Doctoral Consortium paper submissions due</li>
-			<li>12th December, 2023: Notifications</li>
-			<li>10th - 14th of March, 2024: Conference </li>
-		</ul>
+		
+		<script>
+			var acc = document.getElementsByClassName("accordion");
+			var i;
+
+			for (i = 0; i < acc.length; i++) {
+			  acc[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var panel = this.nextElementSibling;
+				panel.style.display = panel.style.display == "block" ? "none" : "block";
+			  });
+			}
+		</script>
+		
 		
 		<br />
 		<br />
