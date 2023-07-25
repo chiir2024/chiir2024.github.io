@@ -10,11 +10,14 @@
 	
 	<div class="main-frame">
 	
-		<div class="topnav">
+		<div class="topnav" id="topnav">
 		<img src="images/logo_header.png" alt="ACM CHIIR 2024 Logo"/>
 			<div class="topnav-right">
-				<a href="index.html">Welcome</a>
-				<a href="cfp.html">Call for Papers</a>
+				<a href="index.html">Home</a>
+				<a href="cfp.html">Submissions</a>
+				<a href="register.html">Register</a>
+				<a href="program.html">Program</a>
+				<a href="attend.html">Attend</a>
 				<a href="organisers.html">Organisers</a>
 			</div>
 		</div>
@@ -206,5 +209,21 @@
 		</div>
 		
 	</div>
+
+		<script>
+		window.onscroll = function() {myFunction()};
+
+		var navbar = document.getElementById("topnav");
+		var sticky = navbar.offsetTop;
+
+		function myFunction() {
+		  if (window.pageYOffset >= sticky) {
+			navbar.classList.add("sticky")
+		  } else {
+			navbar.classList.remove("sticky");
+		  }
+		}
+		</script>
+		
     </body>
 </html>

@@ -8,18 +8,22 @@ html, body {
 h1 {
 	font-size: 1.5rem;
 	color: #2b3781;
-	margin-block-start: 1em;
+	margin-block-start: 2em;
     margin-block-end: 0.67em;
 }
 
 h2 {
 	font-size: 1.3rem;
 	color: #2b3781;
+	margin-block-start: 1.5em;
+    margin-block-end: 0.67em;
 }
 
 h3 {
 	font-size: 1.1rem;
 	color: #2b3781;
+	margin-block-start: 1.5em;
+    margin-block-end: 0.67em;
 }
 
 .highlighted_header {
@@ -29,6 +33,7 @@ h3 {
     font-size: 2.5rem;
     font-weight: bold;
     padding: 0.75rem 1.5rem;
+	margin-block-start: 0.5em;
 	background-color: #2b3781;
 }
 
@@ -37,6 +42,17 @@ h3 {
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 12px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 1024px;
+}
+
+.sticky + .content {
+  padding-top: 40px;
 }
 
 
@@ -74,12 +90,14 @@ h3 {
 }
 
 .logo_block {
+	margin-top: 40px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 .logo_block img {
 		margin: 10px 20px;
+		height: 80px;
 }
 
 .profile_wrapper {
@@ -132,4 +150,101 @@ h3 {
   display: none;
   overflow: hidden;
   margin-bottom: 12px;
+}
+
+/* Carousel */
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  padding-top: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Make the images invisible by default */
+.Containers {
+  display: none;
+}
+
+/* forward & Back buttons */
+.Back, .forward {
+  cursor: pointer;
+  position: absolute;
+  top: 48%;
+  width: auto;
+  margin-top: -23px;
+  padding: 17px;
+  color: grey;
+  font-weight: bold;
+  font-size: 19px;
+  transition: 0.4s ease;
+  border-radius: 0 5px 5px 0;
+  user-select: none;
+}
+
+/* Place the "forward button" to the right */
+.forward {
+  right: 0;
+  border-radius: 4px 0 0 4px;
+}
+
+/*when the user hovers,add a black background with some little opacity */
+.Back:hover, .forward:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption Info */
+.Info {
+  color: #e3e3e3;
+  font-size: 16px;
+  padding: 10px 14px;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Worknumbering (1/3 etc) */
+.MessageInfo {
+  color: #f2f2f3;
+  font-size: 14px;
+  padding: 10px 14px;
+  position: absolute;
+  top: 0;
+}
+
+/* The circles or bullets and indicators */
+.dots {
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+  margin: 0 3px;
+  background-color: #acc;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+
+.enable, .dots:hover {
+  background-color: #717161;
+}
+
+/* Faint animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.4s;
+  animation-name: fade;
+  animation-duration: 1.4s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
+}
+
+@keyframes fade {
+  from {opacity: .5}
+  to {opacity: 2}
 }

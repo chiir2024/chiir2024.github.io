@@ -42,16 +42,57 @@
 	
 	<div class="main-frame">
 	
-		<div class="topnav">
+		<div class="topnav" id="topnav">
 		<img src="images/logo_header.png" alt="ACM CHIIR 2024 Logo"/>
 			<div class="topnav-right">
-				<a href="index.html">Welcome</a>
-				<a href="cfp.html">Call for Papers</a>
+				<a href="index.html">Home</a>
+				<a href="cfp.html">Submissions</a>
+				<a href="register.html">Register</a>
+				<a href="program.html">Program</a>
+				<a href="attend.html">Attend</a>
 				<a href="organisers.html">Organisers</a>
 			</div>
 		</div>
 		
 		<div class="highlighted_header">Sheffield, UK</div>
+		
+		 <!-- Slideshow container -->
+		<div class="slideshow-container fade">
+
+		  <!-- Full images with numbers and message Info -->
+		  <div class="Containers">
+			<img src="images/carousel/IMG_8110.jpg" style="width:100%">
+		  </div>
+
+		  <div class="Containers">
+			<img src="images/carousel/IMG_3488.jpg" style="width:100%">
+		  </div>
+
+		  <div class="Containers">
+			<img src="images/carousel/IMG_4460.jpg" style="width:100%">
+		  </div>
+		  
+		  <div class="Containers">
+			<img src="images/carousel/IMG_3502.jpg" style="width:100%">
+		  </div>
+		  
+		  <div class="Containers">
+			<img src="images/carousel/IMG_6117.jpg" style="width:100%">
+		  </div>
+		  
+		  
+		</div>
+		<br>
+
+		<!-- The circles/dots -->
+		<div style="text-align:center">
+		  <span class="dots" onclick="currentSlide(1)"></span>
+		  <span class="dots" onclick="currentSlide(2)"></span>
+		  <span class="dots" onclick="currentSlide(3)"></span>
+		  <span class="dots" onclick="currentSlide(4)"></span>
+		  <span class="dots" onclick="currentSlide(5)"></span>
+		</div> 
+		
 		
 		<h1>ACM SIGIR Conference on Human Information Interaction And Retrieval</h1>
 		
@@ -79,10 +120,56 @@
 		<br />
 		
 		<div class="logo_block">
-		<a href="http://sheffield.ac.uk/" target="_blank"><img src="images/TUOS_logo.png" alt="The University of Sheffeld logo."/></a> 
-		<a href="https://sigir.org/"><img src="images/SIGIR_logo.jpg" alt="SIGIR logo."/></a>
+		<a href="http://sheffield.ac.uk/" target="_blank"><img src="images/TUOS_logo.png" alt="The University of Sheffeld logo." /></a> 
+		<a href="https://sigir.org/"><img src="images/SIGIR_logo.jpg" alt="SIGIR logo." /></a>
 		</div>
 		
 	</div>
+	
+		<script>
+		var slidePosition = 1;
+		SlideShow(slidePosition);
+
+		// forward/Back controls
+		function plusSlides(n) {
+		  SlideShow(slidePosition += n);
+		}
+
+		//  images controls
+		function currentSlide(n) {
+		  SlideShow(slidePosition = n);
+		}
+
+		function SlideShow(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("Containers");
+		  var circles = document.getElementsByClassName("dots");
+		  if (n > slides.length) {slidePosition = 1}
+		  if (n < 1) {slidePosition = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+			  slides[i].style.display = "none";
+		  }
+		  for (i = 0; i < circles.length; i++) {
+			  circles[i].className = circles[i].className.replace(" enable", "");
+		  }
+		  slides[slidePosition-1].style.display = "block";
+		  circles[slidePosition-1].className += " enable";
+		} 
+		
+		
+		window.onscroll = function() {myFunction()};
+
+		var navbar = document.getElementById("topnav");
+		var sticky = navbar.offsetTop;
+
+		function myFunction() {
+		  if (window.pageYOffset >= sticky) {
+			navbar.classList.add("sticky")
+		  } else {
+			navbar.classList.remove("sticky");
+		  }
+		}
+		</script>
+		
     </body>
 </html>
