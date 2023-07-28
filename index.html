@@ -128,7 +128,12 @@
 	
 		<script>
 		var slidePosition = 1;
-		SlideShow(slidePosition);
+		SlideShow();
+		
+		var circles = document.getElementsByClassName("dots");
+		for (i = 0; i < circles.length; i++) {
+			circles[i].className = circles[i].className.replace(" enable", "");
+		}
 
 		// forward/Back controls
 		function plusSlides(n) {
