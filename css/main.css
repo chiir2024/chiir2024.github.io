@@ -269,3 +269,19 @@ a:visited {
 .PCaffil {
 	font-color: DarkGray;
 }
+
+/* Styling for accepted papers */
+
+.accepted_papers {
+	
+}
+
+.accepted_paper {
+    padding: 10px 6px 10px 6px;
+	line-height: 140%;
+}
+
+div.accepted_papers>div:nth-of-type(even) {
+  background: #e0e0e0;
+}
+
